@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'about',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export default class AboutComponent {}
+export default class AboutComponent implements OnInit {
+  ngOnInit(): void {}
+}
