@@ -1,11 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '../models/state.models';
+import { AppState } from '../../models/state.models';
 import {
   selectReadme,
   selectReadmeLoading,
-} from '../store/readme/readme.selectors';
-import { fetchReadme } from '../store/readme/readme.actions';
+} from '../../store/readme/readme.selectors';
+import { fetchReadme } from '../../store/readme/readme.actions';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
@@ -19,8 +19,13 @@ export default class AboutComponent implements OnInit {
   readme$ = this.#store.select(selectReadme);
   readmeLoading$ = this.#store.select(selectReadmeLoading);
 
-  ngOnInit(): void {
-    this.fetchReadme();
+  ngOnInit() {
+    this.readme$.subscribe((readme) => {
+      // Fetch readme if there is none
+      if (!readme) {
+        this.fetchReadme();
+      }
+    });
   }
 
   fetchReadme() {
