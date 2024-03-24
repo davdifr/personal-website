@@ -1,20 +1,40 @@
-import { Component, inject } from '@angular/core';
-import { environment } from '../../../environments/environment';
+import { Component, inject, OnInit } from '@angular/core';
 import { Repository } from '../../models/github.models';
 import { HttpClient } from '@angular/common/http';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../models/state.models';
+import { fetchRepositories } from '../../store/repositories/repositories.actions';
+import {
+  selectRepositories,
+  selectRepositoriesLoading,
+} from '../../store/repositories/repositories.selectors';
+import { AsyncPipe } from '@angular/common';
+import { RepositoryCardComponent } from './repository-card/repository-card.component';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   standalone: true,
-  imports: [],
+  imports: [AsyncPipe, RepositoryCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
-export default class ProjectsComponent {
+export default class ProjectsComponent implements OnInit {
   #http = inject(HttpClient);
-  #apiUrl = `${environment.api.github.url}/users/${environment.api.github.username}/repos`;
+  #store = inject(Store<AppState>);
 
-  projects: Repository[] = [];
+  repositories$ = this.#store.select(selectRepositories);
+  repositoriesLoading$ = this.#store.select(selectRepositoriesLoading);
 
-  constructor() {}
+  ngOnInit() {
+    this.repositories$.subscribe((repositories) => {
+      // Fetch repositories if there are none
+      if (!repositories.length) {
+        this.fetchRepositories();
+      }
+    });
+  }
+
+  fetchRepositories() {
+    this.#store.dispatch(fetchRepositories());
+  }
 }
