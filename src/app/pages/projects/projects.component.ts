@@ -9,11 +9,12 @@ import {
   selectRepositoriesLoading,
 } from '../../store/repositories/repositories.selectors';
 import { AsyncPipe } from '@angular/common';
+import { RepositoryCardComponent } from './repository-card/repository-card.component';
 
 @Component({
   selector: 'projects',
   standalone: true,
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, RepositoryCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
@@ -33,7 +34,7 @@ export default class ProjectsComponent implements OnInit {
     });
   }
 
-  private fetchRepositories() {
+  fetchRepositories() {
     this.#store.dispatch(fetchRepositories());
   }
 }
