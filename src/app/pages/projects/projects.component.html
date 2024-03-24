@@ -1,1 +1,5 @@
-<p>projects works!</p>
+@if (repositoriesLoading$ | async) {
+<!-- TODO: Add loading spinner -->
+} @for (repository of repositories$ | async; track $index) {
+<!-- TODO: Add repository card -->
+}
