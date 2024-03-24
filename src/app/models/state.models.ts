@@ -1,3 +1,4 @@
+import { SafeHtml } from '@angular/platform-browser';
 import { Readme, Repository } from './github.models';
 
 export interface AppState {
@@ -6,7 +7,7 @@ export interface AppState {
 }
 
 export type RepositoriesState = RequestState<Repository[]>;
-export type ReadmeState = RequestState<Readme>;
+export type ReadmeState = RequestState<SafeHtml>;
 
 export interface RequestState<T> {
   data: T;
