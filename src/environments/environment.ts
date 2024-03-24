@@ -2,8 +2,10 @@ export const environment = {
   appTitle: 'Davide Di Francesco - Portfolio',
   api: {
     github: {
-      url: 'https://api.github.com',
       username: 'davdifr',
+      url: 'https://api.github.com',
+      repos: '/users/davdifr/repos',
+      readme: '/repos/davdifr/davdifr/readme',
     },
   },
 };

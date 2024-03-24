@@ -14,7 +14,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'about',
-        loadComponent: () => import('./pages/about/about.component'),
+        loadComponent: () => import('./pages/about.component'),
       },
       {
         path: 'projects',
