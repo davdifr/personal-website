@@ -1,10 +1,12 @@
 import { Component, inject } from '@angular/core';
-import { environment } from '../../../environments/environment';
 import { Repository } from '../../models/github.models';
 import { HttpClient } from '@angular/common/http';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../models/state.models';
+import { fetchRepositories } from '../../store/repositories/repositories.actions';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   standalone: true,
   imports: [],
   templateUrl: './projects.component.html',
@@ -12,9 +14,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export default class ProjectsComponent {
   #http = inject(HttpClient);
-  #apiUrl = `${environment.api.github.url}/users/${environment.api.github.username}/repos`;
+  #store = inject(Store<AppState>);
 
-  projects: Repository[] = [];
-
-  constructor() {}
+  constructor() {
+    this.#store.dispatch(fetchRepositories());
+  }
 }
