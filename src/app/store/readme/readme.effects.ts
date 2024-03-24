@@ -17,7 +17,7 @@ export class ReadmeEffects {
   #http = inject(HttpClient);
   #actions$ = inject(Actions);
   #sanitizer = inject(DomSanitizer);
-  #apiUrl = `${environment.api.github}/${environment.api.github.username}/${environment.api.github.username}/readme`;
+  #apiUrl = `${environment.api.github.url}${environment.api.github.readme}`;
 
   loadReadme$ = createEffect(() =>
     this.#actions$.pipe(
@@ -28,7 +28,7 @@ export class ReadmeEffects {
             const readme = this.parseReadme(res.content);
             return fetchReadmeSuccess({ readme });
           }),
-          catchError(() => of(fetchReadmeFailure))
+          catchError(() => of(fetchReadmeFailure()))
         )
       )
     )
