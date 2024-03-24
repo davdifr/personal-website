@@ -5,8 +5,17 @@ import { BlankLayoutComponent } from './layouts/blank.component';
 export const routes: Routes = [
   {
     path: '',
+    redirectTo: '/about',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: MainLayoutComponent,
     children: [
+      {
+        path: 'about',
+        loadComponent: () => import('./pages/about/about.component'),
+      },
       {
         path: 'projects',
         loadComponent: () => import('./pages/projects/projects.component'),
@@ -23,6 +32,7 @@ export const routes: Routes = [
       },
     ],
   },
+
   {
     path: '**',
     redirectTo: '/404',
