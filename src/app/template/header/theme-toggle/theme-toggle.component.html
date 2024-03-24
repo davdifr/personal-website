@@ -1,0 +1,7 @@
+<input
+  id="theme-toggle"
+  type="checkbox"
+  [checked]="isDarkThemeActive()"
+  (change)="switchTheme()"
+  [attr.aria-label]="getThemeToggleLabel()"
+/>
