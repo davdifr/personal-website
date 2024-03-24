@@ -6,7 +6,12 @@ export const routes: Routes = [
   {
     path: '',
     component: MainLayoutComponent,
-    children: [],
+    children: [
+      {
+        path: 'projects',
+        loadComponent: () => import('./pages/projects/projects.component'),
+      },
+    ],
   },
   {
     path: '',
