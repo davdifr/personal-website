@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
   #titleService = inject(Title);
