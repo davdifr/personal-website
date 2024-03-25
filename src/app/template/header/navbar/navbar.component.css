@@ -1,16 +1,16 @@
 /* Navbar Styles */
-nav ul {
+nav > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav li {
+nav > ul > li {
   margin-right: 10px;
 }
 
-nav a {
+nav > ul > li > a {
   display: block;
   color: white;
   text-align: center;
@@ -18,11 +18,11 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav > ul > li > a:hover {
   background-color: #111;
 }
 
 /* Active link */
-nav a.router-link-active {
+nav > ul > li > a.router-link-active {
   background-color: #4caf50;
 }

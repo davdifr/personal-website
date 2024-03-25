@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MainLayoutComponent } from './layouts/main.component';
+import { MainLayoutComponent } from './layouts/main/main.component';
 import { BlankLayoutComponent } from './layouts/blank.component';
 
 export const routes: Routes = [
