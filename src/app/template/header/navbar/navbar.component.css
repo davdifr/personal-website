@@ -12,17 +12,21 @@ nav > ul > li {
 
 nav > ul > li > a {
   display: block;
-  color: white;
+  color: var(--secondary-color);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.4rem 0.8rem;
   text-decoration: none;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s;
 }
 
-nav > ul > li > a:hover {
-  background-color: #111;
-}
+/* nav > ul > li > a:hover {
+  background-color: var(--secondary-color);
+} */
 
 /* Active link */
 nav > ul > li > a.router-link-active {
-  background-color: #4caf50;
+  /* background-color: var(--primary-color); */
+  color: var(--text-color);
+  font-weight: 500;
 }

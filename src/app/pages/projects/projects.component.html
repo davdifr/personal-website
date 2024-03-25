@@ -1,7 +1,18 @@
 @if (repositoriesLoading$ | async) {
 <!-- TODO: Add loading spinner -->
-
 }
+<section aria-labelledby="projects-heading">
+  <h2 id="projects-heading">Projects</h2>
+  <p>
+    Discover my GitHub repositories here, each reflecting my journey in web
+    development.
+  </p>
+  <p>
+    This section highlights my technical skills and key areas of interest
+    through the projects I've actively contributed to.
+  </p>
+</section>
+<hr />
 <div class="repository-grid">
   @for (repository of repositories$ | async; track $index) {
   <repository-card [repository]="repository" />

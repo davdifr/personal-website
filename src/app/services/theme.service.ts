@@ -9,7 +9,7 @@ export class ThemeService {
   #path: string = '/assets/themes';
   #stylesheet = document.getElementById('theme') as HTMLLinkElement;
 
-  themeSignal = signal<string>('light');
+  themeSignal = signal<string>('dark');
 
   constructor() {
     this.initializeThemeFromPreferences();
