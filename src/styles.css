@@ -36,12 +36,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2c3e50; /* Darker color for headings */
-  margin: 1em 0; /* Add vertical space above and below headings */
+  color: #2c3e50;
+  margin: 1em 0;
 }
 
 h1 {
-  font-size: 2.5em; /* Larger font size for main heading */
+  font-size: 2.5em;
 }
 
 h2 {
@@ -65,20 +65,20 @@ h6 {
 }
 
 p {
-  color: #34495e; /* Darker color for paragraphs */
-  line-height: 1.8; /* Increased line height for readability */
-  margin-bottom: 1em; /* Add space below paragraphs */
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 1em;
 }
 
 hr {
   border: 0;
   height: 1px;
-  background: #bdc3c7; /* Lighter line color */
+  background: #bdc3c7;
   margin: 20px 0;
 }
 
 a {
-  color: #3498db; /* Brighter link color */
+  color: #3498db;
   text-decoration: none;
 }
 
@@ -94,8 +94,8 @@ div ul {
 
 div li {
   line-height: 1.6;
-  border: 1px solid #bdc3c7; /* Lighter border color */
-  padding: 20px; /* More padding for list items */
-  margin-bottom: 15px; /* More space between list items */
-  background-color: #ecf0f1; /* Light background color for list items */
+  border: 1px solid #bdc3c7;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #ecf0f1;
 }
