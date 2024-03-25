@@ -1,0 +1,11 @@
+.repository-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .repository-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

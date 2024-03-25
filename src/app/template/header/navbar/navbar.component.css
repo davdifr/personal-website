@@ -1,16 +1,13 @@
 /* Navbar Styles */
-nav {
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
 }
 
 nav li {
-  float: left;
+  margin-right: 10px;
 }
 
 nav a {

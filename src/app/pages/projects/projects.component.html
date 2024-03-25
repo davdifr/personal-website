@@ -1,5 +1,9 @@
 @if (repositoriesLoading$ | async) {
 <!-- TODO: Add loading spinner -->
-} @for (repository of repositories$ | async; track $index) {
-<repository-card [repository]="repository" />
+
 }
+<div class="repository-grid">
+  @for (repository of repositories$ | async; track $index) {
+  <repository-card [repository]="repository" />
+  }
+</div>
