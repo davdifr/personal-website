@@ -34,7 +34,7 @@ export default class ProjectsComponent implements OnInit {
     });
   }
 
-  fetchRepositories() {
+  private fetchRepositories() {
     this.#store.dispatch(fetchRepositories());
   }
 }

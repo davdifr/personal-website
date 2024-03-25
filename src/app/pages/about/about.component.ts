@@ -28,7 +28,7 @@ export default class AboutComponent implements OnInit {
     });
   }
 
-  fetchReadme() {
+  private fetchReadme() {
     this.#store.dispatch(fetchReadme());
   }
 }
