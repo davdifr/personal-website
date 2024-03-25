@@ -21,8 +21,7 @@ export default class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.readme$.subscribe((readme) => {
-      // Fetch readme if there is none
-      if (!readme) {
+      if (readme === '') {
         this.fetchReadme();
       }
     });

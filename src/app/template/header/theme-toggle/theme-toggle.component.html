@@ -1,7 +1,9 @@
-<input
-  id="theme-toggle"
-  type="checkbox"
-  [checked]="isDarkThemeActive()"
-  (change)="switchTheme()"
-  [attr.aria-label]="getThemeToggleLabel()"
-/>
+<div id="theme-toggle">
+  <input
+    type="checkbox"
+    [checked]="isDarkThemeActive()"
+    (change)="switchTheme()"
+    [attr.aria-label]="getThemeToggleLabel()"
+  />
+  <span class="slider"></span>
+</div>

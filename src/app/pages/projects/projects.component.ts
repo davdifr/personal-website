@@ -27,7 +27,6 @@ export default class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.repositories$.subscribe((repositories) => {
-      // Fetch repositories if there are none
       if (!repositories.length) {
         this.fetchRepositories();
       }

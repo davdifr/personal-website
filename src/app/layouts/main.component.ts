@@ -6,7 +6,6 @@ import { HeaderComponent } from '../template/header/header.component';
   selector: 'main-layout',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent],
-  template: `<header></header>
-    <router-outlet></router-outlet>`,
+  template: `<template-header /> <router-outlet></router-outlet>`,
 })
 export class MainLayoutComponent {}

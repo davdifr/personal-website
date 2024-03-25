@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-html,
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
+  font-size: 1.6rem;
   font-family: Inter, sans-serif;
-  background-color: var(--background-color);
   color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 a,
 a:visited,
 a:focus {
   color: var(--primary-color);
+  text-decoration: none;
+  /* transition: color 0.3s ease; */
+}
+
+a:hover {
+  text-decoration: underline;
 }

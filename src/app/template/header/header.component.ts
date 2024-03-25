@@ -4,7 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 
 @Component({
-  selector: 'header',
+  selector: 'template-header',
   standalone: true,
   imports: [NavbarComponent, ThemeToggleComponent],
   templateUrl: './header.component.html',
