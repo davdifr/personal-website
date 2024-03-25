@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'template-header',
@@ -10,4 +11,7 @@ import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  // TODO: Remove when theme-toggle is implemented
+  #themeService = inject(ThemeService);
+}
