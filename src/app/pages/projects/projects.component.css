@@ -1,11 +1,12 @@
 .repository-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .repository-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-}
+} */
