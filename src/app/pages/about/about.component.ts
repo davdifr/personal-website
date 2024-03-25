@@ -13,6 +13,7 @@ import { AsyncPipe } from '@angular/common';
   standalone: true,
   imports: [AsyncPipe],
   template: `<div [innerHTML]="readme$ | async"></div>`,
+  styleUrl: './about.component.css',
 })
 export default class AboutComponent implements OnInit {
   #store = inject(Store<AppState>);

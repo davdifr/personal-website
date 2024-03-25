@@ -1,0 +1,21 @@
+/* Repository Card Styles */
+.repository-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); */
+}
+
+.repository-card p {
+  margin: 0 0 10px;
+}
+
+.repository-card a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.repository-card a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
