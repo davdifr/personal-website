@@ -13,7 +13,7 @@
 .repository-card .homepage {
   display: flex;
   gap: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 0.8em;
   color: var(--text-color-light);
 }
 
@@ -31,7 +31,7 @@ mark {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.2rem 0.4rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.2rem;
   background-color: var(--button-color);
   color: var(--text-color);
@@ -52,8 +52,8 @@ svg {
   display: inline-block;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .repository-card a span {
     display: none;
   }
-}
+} */
