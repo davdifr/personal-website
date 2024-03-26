@@ -30,6 +30,7 @@ mark {
 .repository-card a {
   display: flex;
   align-items: center;
+
   gap: 0.5rem;
   padding: 0.3rem 0.6rem;
   border-radius: 0.2rem;
@@ -44,12 +45,8 @@ mark {
 }
 
 svg {
-  width: 1em;
-  height: 1em;
-}
-
-.repository-card a span {
-  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
 }
 
 /* @media (max-width: 600px) {
