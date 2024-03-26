@@ -8,7 +8,7 @@ button {
 }
 
 .rotate-animation {
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
 }
 
 .rotate {
@@ -17,6 +17,6 @@ button {
 
 svg {
   stroke: var(--text-color);
-  width: 1.8em;
-  height: 1.8em;
+  width: 1.9em;
+  height: 1.9em;
 }
