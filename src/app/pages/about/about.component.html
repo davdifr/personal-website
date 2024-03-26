@@ -1,6 +1,5 @@
 @if (readmeLoading$ | async) {
 <!-- TODO: Add loading spinner -->
-<p>Loading...</p>
 } @if (readme$ | async; as readme) {
 <div [innerHTML]="readme"></div>
 }

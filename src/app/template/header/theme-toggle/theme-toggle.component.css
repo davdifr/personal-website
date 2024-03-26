@@ -1,50 +1,22 @@
-/* Theme Toggle Styles */
-/* #theme-toggle {
-  position: relative;
-  display: inline-block;
-  width: 40px; 
-  height: 20px;
-} */
-/* 
-#theme-toggle input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
+button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
   cursor: pointer;
-  z-index: 1;
+  outline: none;
 }
 
-#theme-toggle input:checked + .slider {
-  background-color: var(--primary-color);
+.rotate-animation {
+  transition: transform 0.5s ease;
 }
 
-#theme-toggle input:checked + .slider:before {
-  transform: translateX(20px);
-} */
-
-/* .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--text-color);
-  transition: 0.4s;
-  border-radius: 10px;
+.rotate {
+  transform: rotate(360deg);
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 2px;
-  bottom: 2px;
-  background-color: var(--text-color-light);
-  transition: 0.4s;
-  border-radius: 8px;
-} */
+svg {
+  stroke: var(--text-color);
+  width: 1.8em;
+  height: 1.8em;
+}

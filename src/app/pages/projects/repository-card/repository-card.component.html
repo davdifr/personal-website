@@ -2,9 +2,27 @@
   <div class="header">
     <p>{{ repository.name }}</p>
     <div class="homepage">
+      @if (repository.homepage) {
+      <a [href]="getSafeUrl(repository.homepage)" target="_blank">
+        <span>live</span>
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+          />
+        </svg> -->
+      </a>
+      }
       <a href="{{ repository.html_url }}">
         <span>source</span>
-        <svg
+        <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -17,26 +35,8 @@
             stroke-linejoin="round"
             d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
           />
-        </svg>
+        </svg> -->
       </a>
-      @if (repository.homepage) {
-      <a [href]="getSafeUrl(repository.homepage)" target="_blank">
-        <span>live</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
-          />
-        </svg>
-      </a>
-      }
     </div>
   </div>
   <p class="description">

@@ -12,7 +12,7 @@ import { AsyncPipe } from '@angular/common';
   selector: 'about',
   standalone: true,
   imports: [AsyncPipe],
-  template: `<div [innerHTML]="readme$ | async"></div>`,
+  templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
 export default class AboutComponent implements OnInit {

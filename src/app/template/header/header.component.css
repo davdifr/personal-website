@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--navbar-background);
-  padding: 2rem 0;
+  padding: 2rem;
 
   position: -webkit-sticky;
   position: sticky;
@@ -19,6 +19,6 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
 }
