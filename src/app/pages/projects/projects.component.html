@@ -11,10 +11,13 @@
     This section highlights my technical skills and key areas of interest
     through the projects I've actively contributed to.
   </p>
+  <div class="repository-grid">
+    @for (repository of repositories$ | async; track $index) {
+    <repository-card
+      class="animated-card"
+      [style.animation-delay]="getAnimationDelay($index)"
+      [repository]="repository"
+    />
+    }
+  </div>
 </section>
-<hr />
-<div class="repository-grid">
-  @for (repository of repositories$ | async; track $index) {
-  <repository-card [repository]="repository" />
-  }
-</div>
