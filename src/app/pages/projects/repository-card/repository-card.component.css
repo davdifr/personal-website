@@ -1,21 +1,59 @@
 /* Repository Card Styles */
 .repository-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  background-color: #f9f9f9;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); */
+  border-bottom: 1px solid var(--border-bottom);
 }
 
-.repository-card p {
-  margin: 0 0 10px;
+.repository-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.repository-card .homepage {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--text-color-light);
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+.repository-card .description {
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .repository-card a {
-  color: #337ab7;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
 }
 
 .repository-card a:hover {
-  color: #23527c;
-  text-decoration: underline;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+.repository-card a span {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .repository-card a span {
+    display: none;
+  }
 }

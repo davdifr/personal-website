@@ -4,6 +4,7 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   overflow-x: hidden;
+  padding-top: 3rem;
 }
 
 .animated-card {
