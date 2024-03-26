@@ -24,6 +24,7 @@ export default class ProjectsComponent implements OnInit {
 
   repositories$ = this.#store.select(selectRepositories);
   repositoriesLoading$ = this.#store.select(selectRepositoriesLoading);
+  delayStep = 0.1;
 
   ngOnInit() {
     this.repositories$.subscribe((repositories) => {
@@ -35,5 +36,9 @@ export default class ProjectsComponent implements OnInit {
 
   private fetchRepositories() {
     this.#store.dispatch(fetchRepositories());
+  }
+
+  getAnimationDelay(index: number) {
+    return `${index * this.delayStep}s`;
   }
 }

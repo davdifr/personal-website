@@ -3,10 +3,22 @@
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
+  overflow-x: hidden;
 }
 
-/* @media screen and (max-width: 600px) {
-  .repository-grid {
-    grid-template-columns: minmax(0, 1fr);
+.animated-card {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-} */
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

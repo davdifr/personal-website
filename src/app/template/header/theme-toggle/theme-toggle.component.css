@@ -1,11 +1,11 @@
 /* Theme Toggle Styles */
-#theme-toggle {
+/* #theme-toggle {
   position: relative;
   display: inline-block;
-  width: 40px; /* Reduced width */
+  width: 40px; 
   height: 20px;
-}
-
+} */
+/* 
 #theme-toggle input {
   position: absolute;
   width: 100%;
@@ -21,15 +21,11 @@
   background-color: var(--primary-color);
 }
 
-/* #theme-toggle input:focus + .slider {
-  box-shadow: 0 0 1px #4caf50;
+#theme-toggle input:checked + .slider:before {
+  transform: translateX(20px);
 } */
 
-#theme-toggle input:checked + .slider:before {
-  transform: translateX(20px); /* Adjusted translation */
-}
-
-.slider {
+/* .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -51,4 +47,4 @@
   background-color: var(--text-color-light);
   transition: 0.4s;
   border-radius: 8px;
-}
+} */

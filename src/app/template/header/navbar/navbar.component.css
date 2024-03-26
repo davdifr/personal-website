@@ -7,26 +7,28 @@ nav > ul {
 }
 
 nav > ul > li {
-  margin-right: 10px;
+  margin-right: 2rem;
 }
 
 nav > ul > li > a {
   display: block;
   color: var(--secondary-color);
   text-align: center;
-  padding: 0.4rem 0.8rem;
+  /* padding: 0.4rem 0.8rem; */
   text-decoration: none;
-  border-radius: 0.2rem;
-  transition: background-color 0.3s;
 }
-
-/* nav > ul > li > a:hover {
-  background-color: var(--secondary-color);
-} */
 
 /* Active link */
 nav > ul > li > a.router-link-active {
-  /* background-color: var(--primary-color); */
   color: var(--text-color);
   font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  nav > ul {
+    margin-right: 1rem;
+  }
+  nav > ul > li:first-child {
+    padding-left: 1rem;
+  }
 }
