@@ -14,7 +14,6 @@ import { reducers } from './store/app.reducers';
 import { effects } from './store/app.effects';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { provideIonicAngular } from '@ionic/angular/standalone';
 
 const scrollConfig: InMemoryScrollingOptions = {
   scrollPositionRestoration: 'top',
@@ -30,6 +29,6 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideStore(reducers),
     provideEffects(effects),
-    provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }), provideIonicAngular({}), provideIonicAngular({}),
+    provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
   ],
 };
