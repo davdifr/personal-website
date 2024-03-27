@@ -1,9 +1,8 @@
-/* Navbar Styles */
 nav > ul {
   list-style-type: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav > ul > li {
@@ -12,15 +11,13 @@ nav > ul > li {
 
 nav > ul > li > a {
   display: block;
-  color: var(--secondary-color);
-  /* padding: 0.4rem 0.8rem; */
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
-/* Active link */
 nav > ul > li > a.router-link-active {
-  color: var(--text-color);
   font-weight: 500;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 600px) {

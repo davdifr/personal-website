@@ -1,4 +1,3 @@
-/* Repository Card Styles */
 .repository-card {
   border-bottom: 1px solid var(--border-bottom);
 }
@@ -13,13 +12,8 @@
 .repository-card .homepage {
   display: flex;
   gap: 0.5rem;
-  font-size: 0.8em;
   color: var(--text-color-light);
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
+  font-size: 0.8em;
 }
 
 .repository-card .description {
@@ -30,12 +24,11 @@ mark {
 .repository-card a {
   display: flex;
   align-items: center;
-
   gap: 0.5rem;
   padding: 0.3rem 0.6rem;
   border-radius: 0.2rem;
-  background-color: var(--button-color);
   color: var(--text-color);
+  background-color: var(--button-color);
   transition: background-color 0.3s ease;
 }
 
@@ -43,14 +36,3 @@ mark {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
-
-svg {
-  width: 0.9em;
-  height: 0.9em;
-}
-
-/* @media (max-width: 600px) {
-  .repository-card a span {
-    display: none;
-  }
-} */

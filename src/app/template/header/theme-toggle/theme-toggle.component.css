@@ -1,10 +1,19 @@
 button {
-  background-color: transparent;
   display: flex;
   align-items: center;
+  width: 1.5em;
+  height: 1.5em;
   border: none;
+  background-color: transparent;
+  font-size: inherit;
   cursor: pointer;
   outline: none;
+}
+
+svg {
+  stroke: var(--text-color);
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .rotate-animation {
@@ -13,10 +22,4 @@ button {
 
 .rotate {
   transform: rotate(360deg);
-}
-
-svg {
-  stroke: var(--text-color);
-  width: 1.9em;
-  height: 1.9em;
 }
