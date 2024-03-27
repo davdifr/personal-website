@@ -1,23 +1,25 @@
 header {
   max-width: 75ch;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-color-header);
+  background-color: var(--transparent);
 
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  inset: -1px 0 auto 0;
+
   z-index: 1000;
 
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
 }
 
 @media screen and (max-width: 600px) {
   .overlay {
     padding: 2rem 1rem;
+    padding-top: calc(2rem + 1px);
   }
 }
 
@@ -29,4 +31,5 @@ header {
   background-color: var(--background-color);
   opacity: 0.95;
   padding: 2rem;
+  padding-top: calc(2rem + 1px);
 }
