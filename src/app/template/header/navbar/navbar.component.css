@@ -8,6 +8,7 @@ nav > ul {
 nav > ul > li {
   margin-right: 2rem;
   font-size: 1.8rem;
+  border-bottom: 0 !important;
 }
 
 nav > ul > li > a {

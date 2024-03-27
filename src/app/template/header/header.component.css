@@ -5,8 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--navbar-background);
-  padding: 2rem;
+  background-color: var(--background-color-header);
 
   position: -webkit-sticky;
   position: sticky;
@@ -17,7 +16,17 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .overlay {
     padding: 2rem 1rem;
   }
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--background-color);
+  opacity: 0.95;
+  padding: 2rem;
 }
