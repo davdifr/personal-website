@@ -18,6 +18,7 @@ body {
   background-color: var(--background-color);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

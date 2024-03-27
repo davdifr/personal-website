@@ -3,12 +3,10 @@
   grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   padding-top: 3rem;
-  overflow-x: hidden;
 }
 
 .animated-card {
   opacity: 0;
-  transform: translateX(100%);
   animation: slideInFromRight 0.8s ease-out forwards;
 }
 
