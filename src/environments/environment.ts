@@ -1,5 +1,5 @@
 export const environment = {
-  appTitle: 'Davide Di Francesco - Portfolio',
+  appTitle: 'Davide Di Francesco',
   api: {
     github: {
       username: 'davdifr',
