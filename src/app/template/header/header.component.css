@@ -1,19 +1,26 @@
 header {
+  position: fixed;
+  inset: -1px 0 auto 0;
+  z-index: 1000;
   max-width: 75ch;
   width: 100%;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--transparent);
-
-  position: fixed;
-  inset: -1px 0 auto 0;
-
-  z-index: 1000;
-
   backdrop-filter: blur(2px);
+}
+
+.overlay {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  padding-top: calc(2rem + 1px);
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 600px) {
@@ -21,15 +28,4 @@ header {
     padding: 2rem 1rem;
     padding-top: calc(2rem + 1px);
   }
-}
-
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: var(--background-color);
-  opacity: 0.95;
-  padding: 2rem;
-  padding-top: calc(2rem + 1px);
 }
