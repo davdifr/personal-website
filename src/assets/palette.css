@@ -1,0 +1,53 @@
+:root {
+  --neutral-grey-1: hsl(0, 0%, 28%);
+  --neutral-grey-2: hsl(0, 0%, 43%);
+  --neutral-grey-3: hsl(0, 0%, 58%);
+  --neutral-grey-4: hsl(0, 0%, 76%);
+  --neutral-grey-5: hsl(0, 0%, 88%);
+
+  --cool-grey-1: hsl(209, 15%, 28%);
+  --cool-grey-2: hsl(207, 12%, 43%);
+  --cool-grey-3: hsl(208, 11%, 58%);
+  --cool-grey-4: hsl(210, 16%, 76%);
+  --cool-grey-5: hsl(208, 21%, 88%);
+
+  --primary-blue-1: hsl(205, 41%, 22%);
+  --primary-blue-2: hsl(210, 57%, 27%);
+  --primary-blue-3: hsl(207, 33%, 51%);
+  --primary-blue-4: hsl(209, 56%, 49%);
+  --primary-blue-5: hsl(208, 57%, 61%);
+  --primary-blue-6: hsl(209, 74%, 82%);
+  --primary-blue-7: hsl(210, 90%, 96%);
+
+  --neutral-1: hsl(210, 23%, 16%);
+  --neutral-2: hsl(217, 11%, 42%);
+  --neutral-3: hsl(221, 13%, 59%);
+  --neutral-4: hsl(203, 18%, 75%);
+  --neutral-5: hsl(219, 16%, 83%);
+  --neutral-6: hsl(210, 20%, 90%);
+  --neutral-7: hsl(240, 33%, 97%);
+
+  --accent-green-1: hsl(181, 51%, 17%);
+  --accent-green-2: hsl(172, 48%, 26%);
+  --accent-green-3: hsl(174, 45%, 39%);
+  --accent-green-4: hsl(174, 40%, 47%);
+  --accent-green-5: hsl(177, 53%, 65%);
+  --accent-green-6: hsl(180, 60%, 79%);
+  --accent-green-7: hsl(167, 100%, 95%);
+
+  --accent-yellow-1: hsl(43, 59%, 22%);
+  --accent-yellow-2: hsl(40, 55%, 35%);
+  --accent-yellow-3: hsl(45, 52%, 53%);
+  --accent-yellow-4: hsl(43, 79%, 68%);
+  --accent-yellow-5: hsl(44, 88%, 80%);
+  --accent-yellow-6: hsl(43, 73%, 91%);
+  --accent-yellow-7: hsl(39, 100%, 97%);
+
+  --accent-red-1: hsl(1, 60%, 23%);
+  --accent-red-2: hsl(2, 64%, 31%);
+  --accent-red-3: hsl(1, 65%, 42%);
+  --accent-red-4: hsl(1, 66%, 52%);
+  --accent-red-5: hsl(1, 63%, 63%);
+  --accent-red-6: hsl(1, 62%, 78%);
+  --accent-red-7: hsl(0, 61%, 94%);
+}
