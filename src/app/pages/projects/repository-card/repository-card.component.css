@@ -11,11 +11,18 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  margin-bottom: 1em;
+  /* margin: calc(1em - 1rem) 0 1em 0; */
+}
+
+.repository-card .title {
+  margin: 0 !important;
 }
 
 .repository-card .homepage {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.125em;
   color: var(--secondary-text-color);
   font-size: 0.8em;
 }
@@ -26,11 +33,9 @@
 }
 
 .repository-card a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 0.2rem;
+  padding: 0 1rem;
+  line-height: 2.2rem;
+  border-radius: 2em;
   color: var(--background-color);
   background-color: var(--primary-color);
   transition: background-color 0.3s ease;
