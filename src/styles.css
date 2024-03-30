@@ -87,7 +87,11 @@ div li {
 
   padding: 0.8rem 0 2rem 0;
 
-  border-bottom: 0.2rem solid var(--border-color);
+  border-bottom: 0.3rem solid var(--border-color);
+}
+
+div li:last-child {
+  border-bottom: none;
 }
 
 .sr-only {

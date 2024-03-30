@@ -1,4 +1,8 @@
-.repository-card {
+/* .repository-card {
+  border-bottom: 0.3rem solid var(--border-color);
+} */
+
+:host {
   border-bottom: 0.3rem solid var(--border-color);
 }
 
