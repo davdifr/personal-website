@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--text-color-light);
+  color: var(--secondary-text-color);
   margin: 1em 0;
 }
 
@@ -71,7 +71,7 @@ div a {
 }
 
 div a:hover {
-  color: var(--text-color-light);
+  color: var(--secondary-color);
 }
 
 div ul {
@@ -82,10 +82,12 @@ div ul {
 
 div li {
   margin: 1.2rem 0;
-  border-bottom: 1px solid var(--border-bottom);
   font-size: 1.4rem;
   line-height: 1.75;
-  padding: 0.8rem 0;
+
+  padding: 0.8rem 0 2rem 0;
+
+  border-bottom: 0.2rem solid var(--border-color);
 }
 
 .sr-only {

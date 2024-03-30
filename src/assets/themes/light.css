@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #0a5bb8;
-  --secondary-color: #474645;
-  --background-color: #fdfdfd;
-  --text-color: #31302e;
-  --text-color-light: #292524;
-  --border-bottom: rgb(231 229 228 / 1);
-  --button-color: #efefef;
-  --transparent: rgba(0, 0, 0, 0);
+  --primary-color: hsl(172, 48%, 26%);
+  --secondary-color: hsl(174, 45%, 39%);
+  --background-color: hsl(240, 33%, 97%);
+  --text-color: hsl(217, 11%, 42%);
+  --secondary-text-color: hsl(210, 23%, 16%);
+  --border-color: hsl(219, 16%, 83%);
+  --button-color: hsl(210, 20%, 90%);
+  --transparent-color: rgba(0, 0, 0, 0);
 }
