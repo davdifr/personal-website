@@ -1,14 +1,21 @@
 <div class="repository-card">
   <div class="header">
-    <p class="title">{{ repository.name }}</p>
-    <div class="homepage">
+    <p class="title">
+      {{ repository.name }}
+    </p>
+    <!-- <div class="homepage">
       @if (repository.homepage) {
       <a [href]="getSafeUrl(repository.homepage)" target="_blank">live</a>
       }
       <a href="{{ repository.html_url }}">source</a>
-    </div>
+    </div> -->
   </div>
   <p class="description">
     {{ repository.description }}
   </p>
+  <div class="topic-container">
+    @for (topic of repository.topics; track $index) {
+    <span class="topic">{{ topic }}</span>
+    }
+  </div>
 </div>
