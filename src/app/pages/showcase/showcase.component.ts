@@ -1,5 +1,4 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { Repository } from '../../models/github.models';
 import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../models/state.models';
@@ -15,8 +14,8 @@ import { RepositoryCardComponent } from './repository-card/repository-card.compo
   selector: 'projects',
   standalone: true,
   imports: [AsyncPipe, RepositoryCardComponent],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css',
+  templateUrl: './showcase.component.html',
+  styleUrl: './showcase.component.css',
 })
 export default class ProjectsComponent implements OnInit {
   #http = inject(HttpClient);

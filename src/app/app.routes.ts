@@ -17,8 +17,8 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/about/about.component'),
       },
       {
-        path: 'projects',
-        loadComponent: () => import('./pages/projects/projects.component'),
+        path: 'showcase',
+        loadComponent: () => import('./pages/showcase/showcase.component'),
       },
     ],
   },
